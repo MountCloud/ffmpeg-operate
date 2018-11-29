@@ -40,7 +40,7 @@ public class FFTaskContext {
 
     /**
      * 添加一个任务
-     * @param task
+     * @param task 任务
      */
     public void addTask(FFTask task){
         try{
@@ -55,7 +55,6 @@ public class FFTaskContext {
     /**
      * 提交一个任务
      * @param task 提交任务
-     * @return
      */
     public void submit(FFTask task){
         try{
@@ -76,7 +75,7 @@ public class FFTaskContext {
      * @param task 提交任务
      * @param bean 数据
      * @param <T> 数据
-     * @return
+     * @return 执行结果
      */
     public <T> T submit(FFTask task,T bean){
         T data = null;
@@ -98,7 +97,7 @@ public class FFTaskContext {
 
     /**
      * 任务ID
-     * @param taskId
+     * @param taskId 任务id
      */
     public void removeTask(String taskId){
         try{
@@ -111,7 +110,7 @@ public class FFTaskContext {
 
     /**
      * 提供上下文
-     * @return
+     * @return 上下文
      */
     public static FFTaskContext getContext(){
         if(context == null){

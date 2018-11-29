@@ -35,8 +35,8 @@ public enum FFTaskStateEnum {
 
     /**
      * 获取枚举
-     * @param i
-     * @return
+     * @param i 值
+     * @return 枚举
      */
     public static FFTaskStateEnum getEnum(int i){
         switch (i){
@@ -52,7 +52,7 @@ public enum FFTaskStateEnum {
 
     /**
      * 返回值
-     * @return
+     * @return 值
      */
     public int getValue(){
         return val;

@@ -53,7 +53,7 @@ public abstract class FFVideoTask<T extends FFOperationBase> extends FFTask<T>{
 
     /**
      * 设置结果
-     * @param line
+     * @param line 一行结果
      */
     @Override
     public void callRsultLine(String line) {
@@ -73,7 +73,7 @@ public abstract class FFVideoTask<T extends FFOperationBase> extends FFTask<T>{
 
     /**
      * 子类需要返回的
-     * @param line
+     * @param line 一行结果
      */
     public abstract void callBackResultLine(String line);
 

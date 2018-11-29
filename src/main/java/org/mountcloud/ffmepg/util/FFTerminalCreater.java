@@ -29,7 +29,7 @@ public class FFTerminalCreater {
      * 获取一个命令的命令对象
      * @param cmd 命令
      * @return 命令对象
-     * @throws IOException
+     * @throws IOException 异常
      */
     public FFTerminal getTerminal(String cmd) throws IOException {
         FFTerminal ffTerminal = new FFTerminal( Runtime.getRuntime().exec(cmd));
@@ -40,7 +40,7 @@ public class FFTerminalCreater {
      * 获取一个命令的命令对象
      * @param cmd 命令
      * @return 命令工具
-     * @throws IOException
+     * @throws IOException 异常
      */
     public FFTerminal getTerminal(String[] cmd) throws IOException {
         FFTerminal ffTerminal = new FFTerminal( Runtime.getRuntime().exec(cmd));
@@ -50,8 +50,9 @@ public class FFTerminalCreater {
     /**
      * 获取一个命令的命令对象
      * @param cmd 命令
+     * @param params 参数
      * @return 命令对象
-     * @throws IOException
+     * @throws IOException 异常
      */
     public FFTerminal getTerminal(String cmd, List<String> params) throws IOException {
         String[] tempParams = new String[params.size()];
@@ -111,7 +112,7 @@ public class FFTerminalCreater {
 
         /**
          * 是否还存活
-         * @return
+         * @return 是否存活
          */
         public boolean isAlive(){
             return process.isAlive();

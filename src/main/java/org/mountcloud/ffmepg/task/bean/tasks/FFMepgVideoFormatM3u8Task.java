@@ -38,7 +38,7 @@ public class FFMepgVideoFormatM3u8Task extends FFVideoTask<FFMpegVideoFormatM3u8
 
     /**
      * 任务构造
-     * @param format
+     * @param format 操作
      */
     public FFMepgVideoFormatM3u8Task(FFMpegVideoFormatM3u8 format){
         super(format);
@@ -46,7 +46,7 @@ public class FFMepgVideoFormatM3u8Task extends FFVideoTask<FFMpegVideoFormatM3u8
 
     /**
      * 回调
-     * @param line
+     * @param line 一行结果
      */
     @Override
     public void callBackResultLine(String line) {

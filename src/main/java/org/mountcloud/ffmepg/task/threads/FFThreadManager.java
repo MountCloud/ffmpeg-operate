@@ -81,7 +81,6 @@ public class FFThreadManager {
         /**
          * 提交一个可返回值的线程
          * @param runnable 线程
-         * @return 返回结果
          */
         public void submit(Runnable runnable){
             if (runnable == null) {

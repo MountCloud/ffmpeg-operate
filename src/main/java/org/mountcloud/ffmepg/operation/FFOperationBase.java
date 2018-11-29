@@ -25,7 +25,7 @@ public abstract class FFOperationBase {
 
     /**
      * 返回命令
-     * @return
+     * @return 命令
      */
     public String getCommand(){
         if(command == null){
@@ -36,7 +36,7 @@ public abstract class FFOperationBase {
 
     /**
      * 返回命令参数
-     * @return
+     * @return 参数
      */
     public List<String> getCommandParams(){
         if(commandParams.size()==0){
@@ -48,7 +48,7 @@ public abstract class FFOperationBase {
 
     /**
      * 直接转成命令
-     * @return
+     * @return 命令
      */
     @Override
     public String toString() {

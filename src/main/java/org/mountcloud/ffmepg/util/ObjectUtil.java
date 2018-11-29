@@ -18,9 +18,9 @@ public class ObjectUtil<T> {
 
     /**
      * 获取所有函数
-     * @param t
-     * @param methods
-     * @param index
+     * @param t 类
+     * @param methods 方法
+     * @param index 深度
      */
     public void getMethods(Class t, List<Method> methods, Integer index){
 
@@ -42,9 +42,9 @@ public class ObjectUtil<T> {
 
     /**
      * 获取所有属性
-     * @param t
-     * @param fields
-     * @param index
+     * @param t 类
+     * @param fields 属性
+     * @param index 深度
      */
     public void getFields(Class t, List<Field> fields, Integer index) {
 
@@ -66,8 +66,8 @@ public class ObjectUtil<T> {
 
     /**
      * 将空属性附上默认值
-     * @param obj
-     * @param notSet
+     * @param obj 对象
+     * @param notSet 不设置为空的属性
      */
     public void setNullFields(T obj, List<String> notSet){
         if(obj==null){
@@ -128,8 +128,8 @@ public class ObjectUtil<T> {
 
     /**
      * 给空属性附上默认值
-     * @param objs
-     * @param notSet
+     * @param objs 对象集合
+     * @param notSet 不设置空的属性
      */
     public void setNullFields(List<T> objs,List<String> notSet){
         if(objs!=null){

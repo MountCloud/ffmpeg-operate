@@ -17,7 +17,7 @@ public @interface FFCmd {
 
     /**
      * 命令的key
-     * @return
+     * @return 命令Key
      */
     public String key() default "";
 

@@ -54,7 +54,7 @@ public class FFBigDecimalUtil {
      * @param value2 除数
      * @param scale 精确范围
      * @return 两个参数的商
-     * @throws IllegalAccessException
+     * @throws IllegalAccessException 异常
      */
     public static double div(double value1,double value2,int scale) throws IllegalAccessException{
         //如果精确范围小于0，抛出异常信息
@@ -73,8 +73,8 @@ public class FFBigDecimalUtil {
 
     /**
      * 多个求和
-     * @param decimals
-     * @return
+     * @param decimals 多个值
+     * @return 结果
      */
     public static BigDecimal addDecimals(BigDecimal ...decimals){
         BigDecimal val = new BigDecimal(0);
@@ -129,7 +129,7 @@ public class FFBigDecimalUtil {
      * @param value2 除数
      * @param scale 精确范围
      * @return 两个参数的商
-     * @throws IllegalAccessException
+     * @throws IllegalAccessException  异常
      */
     public static BigDecimal divDecimal(BigDecimal value1,BigDecimal value2,int scale) throws IllegalAccessException{
         //如果精确范围小于0，抛出异常信息
@@ -141,9 +141,9 @@ public class FFBigDecimalUtil {
 
     /**
      * 整数相加
-     * @param i1
-     * @param i2
-     * @return
+     * @param i1 值1
+     * @param i2 值2
+     * @return 相加结果
      */
     public static Integer addInteger(Integer i1,Integer i2){
         if(i1==null&&i2==null){
@@ -160,8 +160,8 @@ public class FFBigDecimalUtil {
 
     /**
      * 返回浮点型累加数量
-     * @param values
-     * @return
+     * @param values 多个相加的值
+     * @return 结果
      */
     public static Float addAllFloat(Float ...values){
         BigDecimal od = new BigDecimal(0.0);
@@ -174,8 +174,8 @@ public class FFBigDecimalUtil {
 
     /**
      * 返回整数型累加数量
-     * @param values
-     * @return
+     * @param values 多个值
+     * @return 结果
      */
     public static Integer addAllInteger(Integer ...values){
         BigDecimal od = new BigDecimal(0.0);

@@ -26,6 +26,7 @@ public class FFAnnotationUtil {
      * @param bean 操作
      * @param <T> 操作的类型
      * @return 返回操作中的所有注解
+     * @throws IllegalAccessException 异常
      */
     public <T extends FFOperationBase> FFCmdBean getClassAnnocation(T bean) throws IllegalAccessException {
         FFCmdBean ffCmdBean = new FFCmdBean();

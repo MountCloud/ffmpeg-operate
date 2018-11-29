@@ -97,7 +97,7 @@ public abstract class FFTask<T extends FFOperationBase> implements FFThread {
 
     /**
      * 正确结果行
-     * @param line
+     * @param line 一行结果
      */
     public abstract void callRsultLine(String line);
 
@@ -109,7 +109,7 @@ public abstract class FFTask<T extends FFOperationBase> implements FFThread {
 
     /**
      * 任务构造
-     * @param operation
+     * @param operation 操作
      */
     public FFTask(T operation){
         this.operationBase = operation;
