@@ -48,6 +48,12 @@ public class FFMepgVideoInfoTask extends FFVideoTask<FFMpegVideoInfo> {
         data.setTimeLength(getTimeLength());
         data.setStartTime(getStartTime());
         data.setBitrate(getBitrate());
+        data.setWidth(getWidth());
+        data.setHeight(getHeight());
+        data.setFps(getFps());
+        data.setTbr(getTbr());
+        data.setTbn(getTbn());
+        data.setTbc(getTbc());
     }
 
     public FFVideoInfoResult getData() {

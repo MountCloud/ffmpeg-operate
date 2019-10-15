@@ -10,6 +10,7 @@ package org.mountcloud.ffmepg.result.defaultResult;
  */
 public class FFVideoInfoResult extends FFDefaultResult{
 
+
     /**
      * 秒数
      */
@@ -29,6 +30,37 @@ public class FFVideoInfoResult extends FFDefaultResult{
      * 比特率
      */
     private String bitrate;
+
+
+    /**
+     * 宽度
+     */
+    private String width;
+
+    /**
+     * 高度
+     */
+    private String height;
+
+    /**
+     * fps
+     */
+    private String fps;
+
+    /**
+     * tbr
+     */
+    private String tbr;
+
+    /**
+     * tbn
+     */
+    private String tbn;
+
+    /**
+     * tbc
+     */
+    private String tbc;
 
     public FFVideoInfoResult() {
         super("");
@@ -68,5 +100,53 @@ public class FFVideoInfoResult extends FFDefaultResult{
 
     public void setBitrate(String bitrate) {
         this.bitrate = bitrate;
+    }
+
+    public String getWidth() {
+        return width;
+    }
+
+    public void setWidth(String width) {
+        this.width = width;
+    }
+
+    public String getHeight() {
+        return height;
+    }
+
+    public void setHeight(String height) {
+        this.height = height;
+    }
+
+    public String getFps() {
+        return fps;
+    }
+
+    public void setFps(String fps) {
+        this.fps = fps;
+    }
+
+    public String getTbr() {
+        return tbr;
+    }
+
+    public void setTbr(String tbr) {
+        this.tbr = tbr;
+    }
+
+    public String getTbn() {
+        return tbn;
+    }
+
+    public void setTbn(String tbn) {
+        this.tbn = tbn;
+    }
+
+    public String getTbc() {
+        return tbc;
+    }
+
+    public void setTbc(String tbc) {
+        this.tbc = tbc;
     }
 }

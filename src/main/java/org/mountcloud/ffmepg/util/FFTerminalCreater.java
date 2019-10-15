@@ -32,6 +32,19 @@ public class FFTerminalCreater {
      * @throws IOException 异常
      */
     public FFTerminal getTerminal(String cmd) throws IOException {
+
+        String[] cmds = new String[3];
+
+        if(OSUtils.WINDOWS){
+            cmds[0] = "cmd";
+            cmds[1] = "/c";
+        }else{
+            cmds[0] = "/bin/sh";
+            cmds[1] = "-c";
+        }
+
+        cmds[2] = cmd;
+
         FFTerminal ffTerminal = new FFTerminal( Runtime.getRuntime().exec(cmd));
         return ffTerminal;
     }
