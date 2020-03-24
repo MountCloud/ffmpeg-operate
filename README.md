@@ -20,6 +20,7 @@
 
 3: Multi-threaded mode of operation.
 
+4: Tasks can be performed synchronously or asynchronously.
 
 # 中文
 
@@ -36,6 +37,8 @@
 2：非常高的可扩展性。
 
 3：多线程方式进行操作。
+
+4：可同步或异步执行。
 
 
 # Demo 用例
