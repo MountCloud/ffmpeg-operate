@@ -6,16 +6,21 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
+ * TODO 字符串工具集
  * @author zhanghaishan
  * @version V1.0
- * @Package com.ugirls.graphql.util
- * @Description: TODO 字符串工具集
- * @date 2018/1/18.
+ * org.mountcloud.ffmepg.util
+ * 2018/1/18.
  */
 public class StringUtil {
 
     private static SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
+    /**
+     * 转Integer
+     * @param obj 待转
+     * @return 结果
+     */
     public static Integer toInteger(Object obj){
         if(obj == null){
             return null;
@@ -23,6 +28,11 @@ public class StringUtil {
         return Integer.parseInt(obj.toString());
     }
 
+    /**
+     * 转Float
+     * @param obj 待转
+     * @return 结果
+     */
     public static Float toFloat(Object obj){
         if(obj == null){
             return null;
@@ -30,6 +40,11 @@ public class StringUtil {
         return Float.parseFloat(obj.toString());
     }
 
+    /**
+     * 转Double
+     * @param obj 待转
+     * @return 结果
+     */
     public static Double toDouble(Object obj){
         if(obj == null){
             return null;
@@ -37,6 +52,11 @@ public class StringUtil {
         return Double.parseDouble(obj.toString());
     }
 
+    /**
+     * 转Long
+     * @param obj 待转
+     * @return 结果
+     */
     public static Long toLong(Object obj){
         if(obj == null){
             return null;
@@ -44,6 +64,11 @@ public class StringUtil {
         return Long.parseLong(obj.toString());
     }
 
+    /**
+     * 转Boolean
+     * @param obj 待转
+     * @return 结果
+     */
     public static Boolean toBoolean(Object obj){
         if(obj == null){
             return null;
@@ -51,6 +76,11 @@ public class StringUtil {
         return Boolean.parseBoolean(obj.toString());
     }
 
+    /**
+     * 转String
+     * @param obj 待转
+     * @return 结果
+     */
     public static String objToString(Object obj){
         if(obj == null){
             return null;
@@ -58,15 +88,20 @@ public class StringUtil {
         return obj.toString();
     }
 
+    /**
+     * 转String
+     * @param date 待转
+     * @return 结果
+     */
     public static String dataToDate(Date date){
         return sdf.format(date);
     }
 
     /**
      * 根据map替换
-     * @param str
-     * @param map
-     * @return
+     * @param str 需要转的
+     * @param map map一次转多个，比如  abc=ccc  eee=ddd
+     * @return 结果
      */
     public static String replaceByMap(String str,Map<String,String> map){
         if(map!=null){
@@ -81,8 +116,8 @@ public class StringUtil {
 
     /**
      * 提取字符串里的数字
-     * @param str
-     * @return
+     * @param str 字符串
+     * @return 数字
      */
     public static String findNumber(String str){
         String regEx="[^0-9]";
@@ -92,8 +127,9 @@ public class StringUtil {
 
     /**
      * 根据正则提取字符串
-     * @param str
-     * @return
+     * @param str 字符串
+     * @param regEx 正则
+     * @return 结果
      */
     public static String findString(String str,String regEx){
         if(str==null){
@@ -109,7 +145,7 @@ public class StringUtil {
      * 根据需要复制的字符串长度进行复制拼接字符串
      * @param str 字符串
      * @param cloneNum 需要拼接的次数
-     * @return
+     * @return 结果
      */
     public static String cloneAndAppend(String str,int cloneNum){
         String newStr = str;
@@ -121,9 +157,9 @@ public class StringUtil {
 
     /**
      * 查询字符串
-     * @param regex
-     * @param str
-     * @return
+     * @param regex 正则
+     * @param str 字符串
+     * @return 结果
      */
     public static List<String> findStringsByRegs(String regex, String str){
         List<String> strs = new ArrayList<>();
@@ -140,9 +176,9 @@ public class StringUtil {
 
     /**
      * 查询字符串
-     * @param regex
-     * @param str
-     * @return
+     * @param regex 正则
+     * @param str 字符串
+     * @return 结果
      */
     public static String findStringsByRegsOne(String regex, String str){
         List<String> strs = findStringsByRegs(regex,str);
