@@ -6,7 +6,7 @@
 
   <groupId>org.mountcloud</groupId>
   <artifactId>ffmpeg-operate</artifactId>
-  <version>1.2.SNAPSHOT</version>
+  <version>1.2</version>
 
   <description>A FFmpeg Java Operate</description>
 
