@@ -1,9 +1,6 @@
 package org.mountcloud.ffmepg.util;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.util.List;
 
 /**
@@ -94,13 +91,56 @@ public class FFTerminalCreater {
         private BufferedReader errorBufferedReader;
         private BufferedReader bufferedReader;
 
+        private OutputStream outputStream;
+
         public FFTerminal(Process process){
             this.process = process;
             this.inputStream = process.getInputStream();
             this.errorInputStream = process.getErrorStream();
+            this.outputStream = process.getOutputStream();
             //this.outputStream = process.getOutputStream();
             errorBufferedReader = new BufferedReader(new InputStreamReader(errorInputStream));
             bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
+        }
+
+        /**
+         * 返回 Process
+         * @return Process
+         */
+        public Process getProcess() {
+            return process;
+        }
+
+        /**
+         * 返回 InputStream
+         * @return InputStream
+         */
+        public InputStream getInputStream() {
+            return inputStream;
+        }
+
+        /**
+         * 返回 ErrorInputStream
+         * @return ErrorInputStream
+         */
+        public InputStream getErrorInputStream() {
+            return errorInputStream;
+        }
+
+        /**
+         * 键入流
+         * @return OutputStream
+         */
+        public OutputStream getOutputStream() {
+            return outputStream;
+        }
+
+        public BufferedReader getErrorBufferedReader() {
+            return errorBufferedReader;
+        }
+
+        public BufferedReader getBufferedReader() {
+            return bufferedReader;
         }
 
         /**
