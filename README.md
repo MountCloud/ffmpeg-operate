@@ -3,7 +3,7 @@
 	<dependency>
 		<groupId>org.mountcloud</groupId>
 		<artifactId>ffmpeg-operate</artifactId>
-		<version>1.1</version>
+		<version>1.2</version>
 	</dependency>
 
 # English
